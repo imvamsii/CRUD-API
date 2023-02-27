@@ -1,0 +1,29 @@
+cd CRUD API
+ls
+go get "github.com/gorilla/mux"
+code 
+
+
+#powershell
+go build
+go run main.go
+Starting server at port 8000
+
+//giving firewall access
+
+#POSTMAN
+
+1. Created a folder "GO Movies"
+    GET ALL     : GET      http://localhost:8000/movies
+    
+    GET BY ID   : GET      http://localhost:8000/movies/1
+    
+    CREATE      : POST     http://localhost:8000/movies
+        Body    : { new json document}
+
+    UPDATE      : PUT      http://localhost:8000/movies
+        Body    :  {took some json doc, changed some data}
+
+    DELETE      : DELETE   http://localhost:8000/movies/id
+        Body    :  {returning the resultant movies.}
+
